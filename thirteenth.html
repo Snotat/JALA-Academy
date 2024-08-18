@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirteenth Page</title>
+</head>
+
+<body>
+    <h2 id="num">0</h2>
+    <button onclick="increment()">Increment</button>
+    <script>
+        let num = 0;
+        document.getElementById('num').innerText = num;
+        const increment = () => {
+            num += 1
+            document.getElementById('num').innerText = num;
+        }
+        class Increment {
+            num = 0
+            get value() {
+                return this.num
+            }
+            set value(numb) {
+                this.num = numb
+            }
+            increase() {
+                this.num += 1
+
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

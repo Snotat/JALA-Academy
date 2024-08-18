@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <time id="it" class="time"></time>
+    <button onclick="setTime()">Set time</button>
+    <script>
+        let time = 0;
+        document.getElementById('it').innerText = time
+        const setTime = () => {
+            const today = new Date();
+            let time = today;
+            document.getElementById('it').innerText = time
+        }
+    </script>
+</body>
+
+</html>
